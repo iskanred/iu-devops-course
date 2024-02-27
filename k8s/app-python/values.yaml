@@ -101,6 +101,9 @@ volumes:
   - name: config-volume
     configMap:
       name: configmap
+  - name: init-files
+    emptyDir:
+      sizeLimit: 10Mi
 
 # Additional volumeMounts on the output Deployment definition.
 volumeMounts:
@@ -109,6 +112,8 @@ volumeMounts:
     subPath: config.json
   - name: visits
     mountPath: "app-python/visits_dir"
+  - name: init-files
+    mountPath: /init-files
 
 volumeClaimTemplates:
   - metadata:
@@ -118,6 +123,32 @@ volumeClaimTemplates:
       resources:
         requests:
           storage: 1Mi
+
+initContainers:
+  - name: init-step-1
+    image: busybox:1.28
+    command: [ "wget", "-O", "/init-files/index-0.html", "http://info.cern.ch" ]
+    volumeMounts:
+    - name: init-files
+      mountPath: /init-files
+  - name: init-step-2
+    image: busybox:1.28
+    command:  [ "wget", "-O", "/init-files/index-1.html", "http://info.cern.ch" ]
+    volumeMounts:
+      - name: init-files
+        mountPath: /init-files
+  - name: init-step-3
+    image: busybox:1.28
+    command:  [ "wget", "-O", "/init-files/index-2.html", "http://info.cern.ch" ]
+    volumeMounts:
+      - name: init-files
+        mountPath: /init-files
+  - name: init-step-4
+    image: busybox:1.28
+    command:  [ "wget", "-O", "/init-files/index-3.html", "http://info.cern.ch" ]
+    volumeMounts:
+      - name: init-files
+        mountPath: /init-files
 
 statefulSet:
   podManagementPolicy: Parallel
