@@ -36,6 +36,13 @@ spec:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+          env:
+            - name: HELM_SECRET_EXAMPLE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: helm-secret-example
+                  key: password
+            {{- include "app-python.env" . | nindent 12 }}
           ports:
             - name: http
               containerPort: {{ .Values.service.port }}

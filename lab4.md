@@ -1,5 +1,7 @@
 # Infrastructure as Code Lab
 
+## Overview
+
 In this lab assignment, you will explore Infrastructure as Code (IAC) using Terraform. You'll build Docker and AWS infrastructures and dive into managing GitHub repositories through Terraform. Additionally, there are bonus tasks to enhance your Terraform skills. Follow the tasks below to complete the lab assignment.
 
 ## Task 1: Introduction to Terraform

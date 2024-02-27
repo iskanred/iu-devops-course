@@ -1,5 +1,7 @@
 # Continuous Integration Lab
 
+## Overview
+
 In this lab assignment, you will delve into continuous integration (CI) practices by focusing on code testing, setting up Git Actions CI, and optimizing workflows. Additionally, you will have the opportunity to explore bonus tasks to enhance your CI knowledge. Follow the tasks below to complete the lab assignment.
 
 ## Task 1: Code Testing and Git Actions CI
