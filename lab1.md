@@ -1,5 +1,7 @@
 # Web Application Development
 
+## Overview
+
 In this lab assignment, you will develop a simple web application using Python and best practices. You will also have the opportunity to create a bonus web application using a different programming language. Follow the tasks below to complete the lab assignment.
 
 ## Task 1: Python Web Application

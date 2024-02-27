@@ -32,6 +32,7 @@ podAnnotations: {
   vault.hashicorp.com/agent-inject-secret-secrets.txt: 'internal/data/secrets',
   vault.hashicorp.com/agent-inject-template-secrets.txt: '{{- with secret "internal/data/secrets" -}}{{ .Data.data.password }}{{- end -}}'
 }
+
 podLabels: {}
 
 podSecurityContext: {}
@@ -109,4 +110,3 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
-

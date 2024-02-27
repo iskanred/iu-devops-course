@@ -1,10 +1,12 @@
 # Lab 7: Monitoring and Logging
 
+## Overview
+
+In this lab, you will become familiar with a logging stack that includes Promtail, Loki, and Grafana. Your goal is to create a Docker Compose configuration and configuration files to set up this logging stack.
+
 ## Task 1: Logging Stack Setup
 
 **6 Points:**
-
-In this lab, you will become familiar with a logging stack that includes Promtail, Loki, and Grafana. Your goal is to create a Docker Compose configuration and configuration files to set up this logging stack.
 
 1. Study the Logging Stack:
    - Begin by researching the components of the logging stack:
