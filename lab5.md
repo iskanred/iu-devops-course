@@ -1,5 +1,7 @@
 # Ansible and Docker Deployment
 
+## Overview
+
 In this lab, you will get acquainted with Ansible, a powerful configuration management and automation tool. Your objective is to use Ansible to deploy Docker on a newly created cloud VM. This knowledge will be essential for your application deployment in the next lab.
 
 ## Task 1: Initial Setup
