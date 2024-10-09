@@ -63,3 +63,4 @@ In this lab, you'll explore Kubernetes StatefulSets, focusing on managing statef
 - For your repository PR, ensure it's from the `lab13` branch to the main branch.
 
 > Note: Understanding StatefulSets and their optimization is crucial for managing stateful applications in Kubernetes. Explore the bonus tasks to further enhance your skills.
+
