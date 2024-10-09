@@ -74,3 +74,4 @@ In this lab, you will explore Kubernetes cluster monitoring using Prometheus wit
 - For your repository PR, ensure it's from the `lab14` branch to the main branch.
 
 > Note: Demonstrate successful implementation and understanding of Kubernetes monitoring and Init Containers. Take your time to explore the bonus tasks for additional learning opportunities.
+
